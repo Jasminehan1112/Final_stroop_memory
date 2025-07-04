@@ -24,16 +24,17 @@ Make sure you have the condition file 'emo_conditions.xlsx,' 'angry.png,' and 'h
 Run the script
 
 ###Packages and Dependencies
--Psychopy
--Panda
+- Psychopy
+- Panda
+  
 
 ###Summary of Result
 After taking the experiment, there will be a file named like sub-001_results.csv in the directory. 
 This file includes:
--Reaction times and accuracy for each trial.
--Congruence condition per trial.
--Block number.
--Memorized number and participant recall.
--Whether the memory recall was correct (1) or incorrect (0).
--Participant mood and anxiety ratings.
--Final feedback ratings on task difficulty and self-performance, or additional comments.
+- Reaction times and accuracy for each trial
+- Congruence condition per trial
+- Block number
+- Memorized number and participant recall
+- Whether the memory recall was correct (1) or incorrect (0)
+- Participant mood and anxiety ratings
+- Final feedback ratings on task difficulty and self-performance, or additional comments
