@@ -93,8 +93,8 @@ master_df = pd.DataFrame()  #create a new dataframe
 num_blocks = 3
 
 for block in range(num_blocks):
-    cond_df = original_df.sample(frac=1)#打乱顺序,1 means everything
-    ### each block 的记忆数 ###
+    cond_df = original_df.sample(frac=1)#random order,1 means everything
+    ### each block need to memorize certain numbers ###
     memory_item = random.randint(10000, 99999)
     memory_stim = TextStim(win, text=f"Block {block+1}: Please remember this number: {memory_item}", height=0.1)
     memory_stim.draw()
@@ -178,7 +178,7 @@ for block in range(num_blocks):
     win.flip()
     wait(4)
 
-    ### Recall ###
+    ### Recall the memory###
     memory_recall = {'What was the number you remembered?': ''}
     dlg = DlgFromDict(memory_recall)
     if memory_recall['What was the number you remembered?'] == str(memory_item):
